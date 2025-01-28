@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <h1>{{detail.product}}</h1>
+        <img src="{{detail.main_image.url}}" alt="">
+        {% if detail.image2 %}
+            <img src="{{ detail.image2.url }}" alt="">
+        {% endif %}
+    
+        {% if detail.image3 %}
+            <img src="{{ detail.image3.url }}" alt="">
+        {% endif %}
+    
+        {% if detail.image4 %}
+            <img src="{{ detail.image4.url }}" alt="">
+        {% endif %}
+        <p>{{detail.price}}</p>
+        <p>{{deatil.description}}</p>
+
+    
+</body>
+</html>
